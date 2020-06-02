@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 
+    meta http的跳转链接格式
+    <meta http-equiv="refresh" content="2;url=https://www.baidu.com">
+    -->
+    <!-- meta的关键字和描述用于搜索和预览展示 -->
+    <meta name="keywords" content="笔记">
+    <meta name="description" content="这是一个笔记页面">
+    <title>前端基础部分总结</title>
+</head>
+<body>
+    <h1>块元素和行内元素</h1>
+    <p>块元素是独占一行的，而<em>行内元素</em>不会</p>
+    <p>再举一个例子看这个就<strong>引人注意</strong></p>
+    这是一个引用：而且是长引用
+    <blockquote>
+        没错就是这个
+    </blockquote>
+    这就是<q>短引用</q>
+
+    <!-- 
+        header 网页头部
+        main 网页主体，只有一个main
+        footer 网页底部
+        nav 网页导航
+        aside 侧边栏
+        article 独立的文字区域
+        section 一个独立的区块，以上标签都不能使用时使用
+
+        div没有语义，就是一个区块
+        span行内元素，没有语义，在网页中选中文字
+     -->
+
+     <!-- 
+         对于列表，列表项都用li表示
+         可以分为
+         有序列表 ol
+         无序列表 ul
+         定义列表 dl
+            使用dt定义内容 dd对内容解释说明
+
+        列表之间可以互相嵌套
+        
+      -->
+      <ul>
+          <li>第一项</li>
+          <li>第二项</li>
+          <li>第三项</li>
+      </ul>
+
+      <ol>
+          <li>第一项</li>
+          <li>第二项</li>
+          <li>第三项</li>
+      </ol>
+
+      <dl>
+          <dt>html</dt>
+          <dd>html用来定义网页的结构</dd>
+      </dl>
+
+      <h2>超链接</h2>
+      <a href="https://www.baidu.com" target="_slef">百度跳转</a>
+      <a href="https://www.baidu.com" target="_blank">百度新页面</a>
+
+      <!-- 
+          img是一个自结束标签，src是图片源，alt是图片信息，可以修改长宽等
+       -->
+
+       <img src="../图片/老婆1.png" alt="老婆章若楠">
+
+       <!-- 
+        embed 用来解决ie8不兼容问题   
+
+        <audio controls>
+           <source src="音频地址"> 
+            <embed src="" type="">
+       </audio>
+
+       <video controls>
+           <source src="视频地址">
+            <embed src="" type="">
+       </video> 
+        -->
+</body>
+</html>
