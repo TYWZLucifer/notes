@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* 元素选择器
+        根据标签名字选择指定元素 
+    */
+    h1{
+        color: brown;
+        font-size: 30px;
+    }
+
+    p{
+        color: darkblue;
+        font-size: 50px;
+    }
+
+    /* id选择器
+        根据id选择元素
+     */
+
+    #id选择器{
+        color: darkgreen;
+        font-size: 40px;
+    }
+
+    /*  类选择器
+        根据属于class的选择 
+     */
+
+     .class选择{
+         color: darkred;
+     }
+
+     /* 通配选择器
+        选择页面中所有元素
+        *{}    
+     */
+
+     /* 除了以上常用选择器，还有关系选择器（以父子祖先，兄弟关系）、复合选择器（交集并集）、属性选择器（标签中的属性如p中的title） */
+
+     /* 超链接伪类 
+        其中：
+                link表示没有访问过的链接
+                visited表示已经访问过的
+
+                由于隐私原因，visited只能修改颜色，字体无法改
+
+                hover表示鼠标移入的状态
+                active表示鼠标点击的状态
+    */
+     a:link{       
+        color:olive;
+     }
+     a:visited{
+         color:red;
+     }
+     a:hover{
+         font-size: 50px;
+     }
+
+     /* 伪元素
+            表示一些不真实存在的（特殊位置的）元素
+            ::first-letter第一个字母
+            ::first-line第一行
+            ::selection选中的内容
+      */
+      p::selection{
+          background-color: magenta;
+      }
+
+      div::before{
+          content: "前面没法选";
+          color: midnightblue;
+      }
+      div::after{
+          content: "后面也没法选";
+          color: midnightblue;
+      }
+      div::selection{
+          background-color: seagreen;
+      }
+</style>
+<body>
+
+    <div>这行的前后都无法选中哦</div>
+
+    <h1>一个大标题</h1>
+    <p class = "class选择">这是第一行</p>
+    <p id = "id选择器">这是第二行</p>
+    <p>这是第三行</p>
+    <p>这是第四行</p>
+    <p class = "class选择">这是第五行</p>
+
+    <a href="https://www.baidu.com" target="_self">超链接伪类测试已点击</a>
+    <br><br>
+    <a href="https://www.baidu.com" target="_blank">超链接伪类测试未点击</a>
+</body>
+</html> 
